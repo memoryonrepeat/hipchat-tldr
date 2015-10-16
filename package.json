@@ -1,0 +1,33 @@
+{
+  "name": "TLDR",
+  "displayName": "TLDR",
+  "description": "Summarize paragraphs starting with /tldr",
+  "version": "0.1.0",
+  "author": {
+    "name": "NGUYEN TIEN THANH",
+    "url": "https://github.com/tienthanh8490"
+  },
+  "license": "Apache 2.0",
+  "engines": {
+    "node": "~0.11.13"
+  },
+  "scripts": {
+    "web": "node --harmony web.js",
+    "web-dev": "nodemon web.js",
+    "tunnel": "ngrok http 3000"
+  },
+  "development": {
+    "port": 3000,
+    "localBaseUrl": "http://05535640.ngrok.io"
+  },
+  "production": {
+    "localBaseUrl": "https://hipchat-greeter-example.herokuapp.com",
+    "redisEnv": "REDISCLOUD_URL",
+    "port": "$PORT"
+  },
+  "dependencies": {
+    "ac-koa": "^0.2.6",
+    "ac-koa-hipchat": "^0.2.16",
+    "node-summary": "^1.1.0"
+  }
+}
